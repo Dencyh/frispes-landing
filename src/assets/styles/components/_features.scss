@@ -1,0 +1,35 @@
+.features {
+  width: 50%;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  color: $primary;
+
+  &__item {
+    margin-right: 50px;
+    display: flex;
+
+    min-width: 200px;
+  }
+
+  &__icon {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  &__icon > svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__number {
+    font-size: 32px;
+    font-family: "Lora", serif;
+  }
+
+  &__subtitle {
+    color: $grey;
+  }
+}

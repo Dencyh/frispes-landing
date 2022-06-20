@@ -1,0 +1,39 @@
+.facilities {
+  position: relative;
+  margin-bottom: 180px;
+}
+
+.facilities__item {
+  width: 293px;
+}
+
+.facilities__title {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 24px;
+
+  cursor: pointer;
+
+  transition: all 100ms ease;
+}
+
+.facilities__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.facilities__title:hover {
+  background-color: $secondary;
+  color: $white;
+  box-shadow: 0px 0px 24px rgba(254, 109, 64, 0.503);
+}
+
+.facilities__image {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  transition: all 0ms ease;
+  margin-bottom: 100px;
+}

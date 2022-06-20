@@ -1,0 +1,129 @@
+.search-form {
+  position: relative;
+  min-width: 450px;
+  height: 100%;
+  padding: 30px 40px 40px;
+  display: flex;
+  flex-direction: column;
+
+  color: $white;
+  background-color: $primary;
+}
+.search-form__item {
+  position: relative;
+
+  margin: 10px auto;
+  padding: 8px 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $primary-dark;
+}
+
+.search-form__title {
+  margin: 10px auto;
+  font-family: "Lora", serif;
+  font-size: 34px;
+  text-align: center;
+}
+
+.search-form__label {
+  opacity: 35%;
+  margin-bottom: 8px;
+}
+
+.search-form__input {
+  color: $white;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+
+.search-form__input::placeholder {
+  color: $white;
+  opacity: 0.4;
+}
+
+.search-form__list {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+
+  margin: 0;
+  padding: 0;
+  max-height: 150px;
+  width: 100%;
+  overflow-y: auto;
+
+  list-style: none;
+  background-color: $primary-dark;
+  z-index: 1000;
+}
+
+.search-form__list.show {
+  display: block;
+}
+
+.search-form__list::-webkit-scrollbar {
+  width: 16px;
+}
+
+.search-form__list::-webkit-scrollbar-track {
+  background-color: $black;
+  opacity: 9;
+  border-radius: 100px;
+}
+
+.search-form__list::-webkit-scrollbar-thumb {
+  background-color: $secondary;
+  border-radius: 100px;
+}
+
+.search-form__list-item {
+  padding: 8px 10px;
+  width: calc(100% - 20px);
+  cursor: pointer;
+}
+.search-form__list-item:hover {
+  color: $secondary;
+}
+
+.search-form__button {
+  margin: 10px auto;
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: $white;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: $secondary;
+  box-shadow: 0px 2px 12px rgba(255, 87, 34, 0.32);
+}
+
+.search-form__button::hover {
+  background-color: #e04c1fe8;
+}
+
+.search-form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  align-self: end;
+}
+
+.search-form__icon > svg {
+  transform: rotate(90deg);
+  color: $white;
+}
+
+.search-form__button:hover {
+  background-color: #ff5622f7;
+}

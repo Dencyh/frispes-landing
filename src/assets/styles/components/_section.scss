@@ -1,0 +1,155 @@
+.section__inner--header-end {
+  justify-content: flex-end;
+}
+
+h1.section__title {
+  font-size: 52px;
+}
+
+.section {
+  position: relative;
+  margin: 50px 0 80px;
+}
+.section__inner {
+  width: 100%;
+  display: flex;
+
+  gap: 70px;
+}
+
+.section__header {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 60%;
+  margin-bottom: 25px;
+
+  z-index: 1000;
+  position: relative;
+}
+
+.section__header--half-width {
+  width: 50%;
+}
+
+.section__title-wrapper {
+  flex: 1 1 60%;
+}
+
+.section__description {
+  flex: 1 1 30%;
+}
+
+.section__subtitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section__subtitle--position-absolute {
+  position: absolute;
+  top: -28px;
+}
+
+.section__subtitle::after {
+  content: "";
+  transform: translateY(-60%);
+  margin-left: 10px;
+  display: inline-block;
+  height: 2px;
+  min-width: 70px;
+  background: $primary-dark;
+}
+
+.section__title {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  line-height: 67px;
+  color: $primary;
+}
+
+.section__title--margin-right {
+  margin-right: 60px;
+}
+
+.section__title--white-text {
+  color: $white;
+}
+
+.section__title-accent {
+  color: $secondary-saturated;
+}
+
+.section__description {
+  font-size: 20px;
+  line-height: 30px;
+  color: $grey;
+  height: 100%;
+}
+
+.section__controls {
+  display: flex;
+  gap: 20px;
+}
+
+.section__control-button {
+  background: none;
+  outline: none;
+  border: none;
+  opacity: 0.8;
+
+  transition: all 150ms ease;
+}
+
+.section__control-button:hover {
+  transform: scale(104%);
+  opacity: 1;
+}
+
+.section__controls--margin-top {
+  margin-top: 40px;
+}
+
+.section__controls > * {
+  cursor: pointer;
+}
+
+.section__image {
+  display: inline-block;
+  z-index: -1;
+  margin-left: -5%;
+}
+
+.section__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.section__content--horizontal {
+  margin-top: 55px;
+  justify-content: center;
+  gap: 60px;
+}
+
+.section__header--white-text {
+  width: 50%;
+  color: $white;
+  background-color: $primary;
+  padding: 53px;
+}
+
+.section__header--white-text .section__subtitle::after {
+  background-color: $white;
+}
+
+.section__description--white-text {
+  margin-top: 25px;
+  color: $white;
+}
+
+.section__inner--center {
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}

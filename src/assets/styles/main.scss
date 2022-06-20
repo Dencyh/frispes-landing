@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&display=swap");
+@import "./variables.scss";
+@import "./components/_header.scss";
+@import "./components/_section.scss";
+@import "./components/_search-form.scss";
+@import "./components/_card.scss";
+@import "./components/_features.scss";
+@import "./components/_facilities.scss";
+@import "./components/_gallery.scss";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
