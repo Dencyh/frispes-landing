@@ -17,6 +17,10 @@ h1.section__title {
   gap: 70px;
 }
 
+.section__inner--to-sides {
+  justify-content: space-between;
+}
+
 .section__header {
   display: flex;
   flex-direction: column;
@@ -32,6 +36,21 @@ h1.section__title {
   width: 50%;
 }
 
+.section__header--third-width {
+  width: 33%;
+}
+
+.section__header--white-text {
+  width: 50%;
+  color: $white;
+  background-color: $primary;
+  padding: 53px;
+}
+
+.section__header--white-text .section__subtitle::after {
+  background-color: $white;
+}
+
 .section__title-wrapper {
   flex: 1 1 60%;
 }
@@ -42,6 +61,7 @@ h1.section__title {
 
 .section__subtitle {
   font-size: 20px;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -130,17 +150,6 @@ h1.section__title {
   margin-top: 55px;
   justify-content: center;
   gap: 60px;
-}
-
-.section__header--white-text {
-  width: 50%;
-  color: $white;
-  background-color: $primary;
-  padding: 53px;
-}
-
-.section__header--white-text .section__subtitle::after {
-  background-color: $white;
 }
 
 .section__description--white-text {
