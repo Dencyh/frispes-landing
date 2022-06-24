@@ -2,3 +2,5 @@
 dist
 node_modules
 src/assets/images
+src/assets/icons
+extra 

@@ -91,26 +91,6 @@
   color: $secondary;
 }
 
-.search-form__button {
-  margin: 10px auto;
-  height: 50px;
-  width: 100%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-
-  color: $white;
-  font-size: 1.1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-color: $secondary;
-  box-shadow: 0px 2px 12px rgba(255, 87, 34, 0.32);
-}
-
-.search-form__button::hover {
-  background-color: #e04c1fe8;
-}
-
 .search-form__icon {
   position: absolute;
   top: 50%;
@@ -122,8 +102,4 @@
 .search-form__icon > svg {
   transform: rotate(90deg);
   color: $white;
-}
-
-.search-form__button:hover {
-  background-color: #ff5622f7;
 }

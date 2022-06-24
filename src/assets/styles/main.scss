@@ -8,6 +8,9 @@
 @import "./components/_facilities.scss";
 @import "./components/_gallery.scss";
 @import "./components/_reviews.scss";
+@import "./components/_tips.scss";
+@import "./components/_news.scss";
+@import "./components/_footer.scss";
 
 *,
 *::after,
@@ -22,6 +25,7 @@ img {
 }
 
 body {
+  /* font-family: "Lora", serif; */
   font-family: "Lato", sans-serif;
 }
 
